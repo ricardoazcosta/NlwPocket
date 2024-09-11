@@ -22,3 +22,30 @@ resolver problemas
 2. **Desenvolvimento do algoritimo**: Criar um plano de ação para resolver.
 3. **Implementação do algoritimo**: Processar dados (manipular, alterar) Traduzir o algoritimo em código.
 4. **Testes**: Apresentar os dados - Verificar se o código está funcionando corretamente.
+
+## Escopo e Variáveis:
+
+- **Escopo**: Onde a variável pode ser acessada.
+- **Variáveis Globais e Locais**: São identificadores que guardam valores.(let, const)
+- **Tipos de dados**: São categorias de valores que podem ser armazenados em uma
+  variável.
+
+## Tipos de Dados:
+
+- **String**: Conjunto de caracteres, como texto.("" '' ``)
+- **Number**: Números inteiros ou decimais.
+- **Boolean**: Verdadeiro ou Falso.
+- **Null**: Nulo ou vazio.
+- **Undefined**: Não definido.
+- **Functions** Funções.
+
+## Operadores
+
+- **Atribuição**: Operador de atribuição do valor da variável. ( = )
+- **Concatenação**: Atribuição de uma variavel seguida de sinais ( atribuição variavel + " " + variavel)
+
+## Array
+
+- **Array**: uma lista que contém/pode ser qualquer tipo de dado.
+- **Index**: Posição de um elemento dentro de um array. ==> Ex: ["Melancia", "Abacate", "laranja"] => Melancia posição 0
+- **Métodos**: Funções que podem ser utilizadas em arrays.
