@@ -53,3 +53,4 @@ resolver problemas
 ## Estrutura de repetição
 
 - **while** (while) = Enquanto
+- **switch** = Repetição
