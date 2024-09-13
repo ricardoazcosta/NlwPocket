@@ -49,3 +49,7 @@ resolver problemas
 - **Array**: uma lista que contém/pode ser qualquer tipo de dado.
 - **Index**: Posição de um elemento dentro de um array. ==> Ex: ["Melancia", "Abacate", "laranja"] => Melancia posição 0
 - **Métodos**: Funções que podem ser utilizadas em arrays.
+
+## Estrutura de repetição
+
+- **while** (while) = Enquanto

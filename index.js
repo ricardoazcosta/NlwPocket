@@ -15,3 +15,15 @@ let metas = [
 ]
 
 console.log(metas[1].value)
+
+const start = () =>{
+    let cont = 0
+    while (cont <= 10) {
+        console.log(cont)
+        cont++
+
+        
+    }
+}
+
+start()
