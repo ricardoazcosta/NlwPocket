@@ -54,3 +54,14 @@ resolver problemas
 
 - **while** (while) = Enquanto
 - **switch** = Repetição
+
+## Módulos em Node.js
+
+- Importação de módulos **requirer**
+- **inquirer**: Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assincronas e Promises
+
+- ==> Uso de Funções assincronas (async/await)
+- **Promises**: (await) São objetos que representam uma operação assíncrona que pode ser concluída ou rejeitada.
+- **Assincroas**: (async)
