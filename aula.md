@@ -43,6 +43,7 @@ resolver problemas
 
 - **Atribuição**: Operador de atribuição do valor da variável. ( = )
 - **Concatenação**: Atribuição de uma variavel seguida de sinais ( atribuição variavel + " " + variavel)
+- **Comparação**: == (igual), !=(diferente), <=(menor igual), >=(maior igual), <(menor), >(maoir)
 
 ## Array
 
@@ -53,7 +54,7 @@ resolver problemas
 ## Estrutura de repetição
 
 - **while** (while) = Enquanto
-- **switch** = Repetição
+- **switch** = Repetição -**if** = (se)
 
 ## Módulos em Node.js
 
