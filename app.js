@@ -33,14 +33,15 @@ const listarMetas = async () => {
     instructions: false,
   });
 
+  metas.forEach((e) => {
+    e.checked = false;
+  });
+  
   if (respostas == 0) {
     console.log("Nenhuma meta selecionada");
     return;
   }
 
-  metas.forEach((e) => {
-    e.checked = false;
-  });
 
   respostas.forEach((resposta) => {
 
