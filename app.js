@@ -36,7 +36,7 @@ const listarMetas = async () => {
   metas.forEach((e) => {
     e.checked = false;
   });
-  
+
   if (respostas == 0) {
     console.log("Nenhuma meta selecionada");
     return;
@@ -70,6 +70,20 @@ const metasRealizadas = async () => {
 
 }
 
+const metasAbertas = async () => {
+  const abertas = metas.filter((meta) => {
+    return !meta.checked
+  })
+  if (abertas.length == 0) {
+    console.log('Não existem metas abertas :)')
+    return
+}
+await select({
+  message: 'Meta(s) aberta(s)',
+  choices: [...abertas]
+})
+}
+
 const start = async () => {
   while (true) {
     const opcao = await select({
@@ -78,6 +92,7 @@ const start = async () => {
         { name: "Cadastrar meta", value: "cadastrar" },
         { name: "Listar meta", value: "listar" },
         { name: "Metas realizada(s)", value: "realizada(s)" },
+        { name: "Metas abertas(s)", value: "aberta(s)" },
         { name: "Sair", value: "sair" },
       ],
     });
@@ -94,6 +109,9 @@ const start = async () => {
       case "realizada(s)":
         await metasRealizadas();
         break;
+        case "aberta(s)":
+          await metasAbertas();
+          break;
       case "sair":
         console.log("Você saiu do app");
         return;
