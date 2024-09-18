@@ -44,12 +44,14 @@ resolver problemas
 - **Atribuição**: Operador de atribuição do valor da variável. ( = )
 - **Concatenação**: Atribuição de uma variavel seguida de sinais ( atribuição variavel + " " + variavel)
 - **Comparação**: == (igual), !=(diferente), <=(menor igual), >=(maior igual), <(menor), >(maoir)
+- **Spread operator** : ...
 
 ## Array
 
 - **Array**: uma lista que contém/pode ser qualquer tipo de dado.
 - **Index**: Posição de um elemento dentro de um array. ==> Ex: ["Melancia", "Abacate", "laranja"] => Melancia posição 0
 - **Métodos**: Funções que podem ser utilizadas em arrays.
+- **Metodos de arrays**: push, [find, forEach, filter] : HOF (Higher Order Functions)
 
 ## Estrutura de repetição
 
