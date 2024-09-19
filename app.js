@@ -60,11 +60,11 @@ const metasRealizadas = async () => {
 
     if (realizadas.length == 0) {
         
-        console.log('Não existem metas realizadas :( ')
+        console.log('Não existem metas realizadas 😞')
         return
     }
     await select({
-        message: 'Meta(s) realizada(s)',
+        message: 'Meta(s) realizada(s) ' + realizadas.length,
         choices: [...realizadas]
     })
 
@@ -75,13 +75,38 @@ const metasAbertas = async () => {
     return !meta.checked
   })
   if (abertas.length == 0) {
-    console.log('Não existem metas abertas :)')
+    console.log('Não existem metas abertas 😊')
     return
 }
 await select({
-  message: 'Meta(s) aberta(s)',
+  message: 'Total de Meta(s) Aberta(s) ' + abertas.length,
   choices: [...abertas]
 })
+}
+
+const excluirMetas = async () =>{
+  const metasDesmarcadas = metas.map((meta)=>{
+    return { value: meta.value, checkbox: false}
+  })
+  
+  const metasADeletar = await checkbox({
+    message: "Selecione o item para deletar",
+    choices: [...metasDesmarcadas],
+    instructions: false,
+  })
+  
+  if (metasADeletar == 0) {
+    console.log('Nenhuma item para deletar')
+    return
+    
+  }
+
+  metasADeletar.forEach((item)=>{
+    metas=metas.filter((meta) => {
+      return meta.value != item
+    })
+  })
+console.log('Meta(s) deletada(s) com Sucesso')
 }
 
 const start = async () => {
@@ -93,6 +118,7 @@ const start = async () => {
         { name: "Listar meta", value: "listar" },
         { name: "Metas realizada(s)", value: "realizada(s)" },
         { name: "Metas abertas(s)", value: "aberta(s)" },
+        { name: "Excluir metas(s)", value: "excluir" },
         { name: "Sair", value: "sair" },
       ],
     });
@@ -112,6 +138,9 @@ const start = async () => {
         case "aberta(s)":
           await metasAbertas();
           break;
+          case "excluir":
+            await excluirMetas();
+            break;
       case "sair":
         console.log("Você saiu do app");
         return;
