@@ -62,6 +62,13 @@ resolver problemas
 
 - Importação de módulos **requirer**
 - **inquirer**: Biblioteca 'inquirer' para criar prompts interativos
+- **FS**: file system
+
+## JSON
+
+- _Javascript Object Notation_ (.json)
+- **JSON.parse()**: transforma de JSON para Javascript
+- **JSON.stringify**: transforma de Javascript para JSON
 
 ## Programação assincronas e Promises
 

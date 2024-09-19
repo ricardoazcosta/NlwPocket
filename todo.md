@@ -6,3 +6,4 @@
 - Marcar/Desmarcar Metas realizadas
 - Remover Metas
 - Sistema de Mensagens
+- Persistir Dados
